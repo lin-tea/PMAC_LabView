@@ -13,3 +13,7 @@
   - LabVIEW提供Active控件，可以嵌入ActiveX 控制，使用控件的属性和方法， 与其进行交互。
   - 参考官方[ActiveX and LabVIEW](https://www.ni.com/zh-cn/innovations/white-papers/06/activex-and-labview.html#section-500257886)  
 如下图我们可以在程序面板，用`函数`->`互连接口`->`.AtiveX`->`打开自动化`连接COM组件：
+<div align=center><img src="https://github.com/lin-tea/PMAC_LabView/blob/main/images/ativeX.png" width="75%" height="75%"></div>
+
+## 调用Pcomserver.dll
+- 
