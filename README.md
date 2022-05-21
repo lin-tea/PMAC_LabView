@@ -22,3 +22,17 @@
 <div align=center><img src="https://github.com/lin-tea/PMAC_LabView/blob/main/images/funcCall.png" width="35%" height="35%"> <img src="https://github.com/lin-tea/PMAC_LabView/blob/main/images/selectDev.png" width="40%" height="40%"></div>  
 
 - 对于函数的使用，参考[使用手册](https://github.com/lin-tea/PMAC_LabView/blob/main/Sources/PcommServer%20Library%20of%20PMAC%20Functions%20.pdf)
+
+## 通讯
+
+## PMAC基本实时执行命令
+
+## Jog实现
+
+## 位置读取
+
+## 文件下载
+
+---
+## Reference  
+[1]  
