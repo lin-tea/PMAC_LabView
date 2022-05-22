@@ -6,6 +6,10 @@
 目录:
 - [AtiveX in LabView](#ativex-in-labview)  
 - [调用Pcomserver.dll](#调用pcomserver) 
+- [通讯](#通讯)
+- [PMAC基本实时执行命令](#pmac基本实时执行命令)
+- [Jog实现](#jog实现)  
+
 ---
 ## AtiveX in LabView
 - **AtiveX**：面向对象程序技术、工具；
@@ -23,10 +27,32 @@
 
 - 对于函数的使用，参考[使用手册](https://github.com/lin-tea/PMAC_LabView/blob/main/Sources/PcommServer%20Library%20of%20PMAC%20Functions%20.pdf)
 
+- **主要函数使用**:
+
+  |函数|功能|手册页数|
+  |---|---|---|
+  |SelectDevice()|选择PMAC卡|p38|
+  |Open()|连接PMAC卡|p39|
+  |**GetResponseEx()**|发送命令到PMAC卡|p41|
+
 ## 通讯
+- 使用函数 `SelectDevice` 选择PMAC卡，用得到的PMAC卡号通过 `Open` 函数进行连接。(参考使用手册的38页，以及在LabView中的调用控件，我们可以获取函数的使用方式)，最终通讯程序框图如下：  
+<div align=center><img src="https://github.com/lin-tea/PMAC_LabView/blob/main/images/connectPMAC.png" width="100%" height="75%"></div>  
+触发连接，会弹出一以下界面，选择连接方式进行连接，(连接成功后，得到的连接状态为: True):
+<div align=center><img src="https://github.com/lin-tea/PMAC_LabView/blob/main/images/connectPMAC2.png" width="30%" height="30%"></div>   
 
-## PMAC基本实时执行命令
-
+## PMAC基本实时执行命令  
+  |命令|功能|
+  |---|---|
+  |#nj+|正向连续点动|
+  |#nj+)|反向连续点动|
+  |#nj/|停止、闭环|
+  |#nj={*C*}|到C位置,单位脉冲|
+  |#nj^{*C*}|运动C个脉冲|
+  |#nP|获取位置，单位脉冲|
+  |#nHOMEZ|置当前位置为0点|  
+  
+其中(n表示电机号，C表示常数)
 ## Jog实现
 
 ## 位置读取
