@@ -22,7 +22,9 @@
 ## 调用Pcomserver
 - 使用`打开自动化`控件，选择AtiveX类，并且选择Pcomserver
 <div align=center><img src="https://github.com/lin-tea/PMAC_LabView/blob/main/images/chooseCOM.png" width="30%" height="30%"> <img src="https://github.com/lin-tea/PMAC_LabView/blob/main/images/choosePcom.png" width="55%" height="55%"></div>  
+
 - 使用函数->`编程`->`应用程序控制`->`调用节点`：使用COM中的函数，如下，选择*SelectDevice()* 选择PMAC卡通讯连接方式，得到PMAC卡号。
+
 <div align=center><img src="https://github.com/lin-tea/PMAC_LabView/blob/main/images/funcCall.png" width="35%" height="35%"> <img src="https://github.com/lin-tea/PMAC_LabView/blob/main/images/selectDev.png" width="40%" height="40%"></div>  
 
 - 对于函数的使用，参考[使用手册](https://github.com/lin-tea/PMAC_LabView/blob/main/Sources/PcommServer%20Library%20of%20PMAC%20Functions%20.pdf)
@@ -38,7 +40,9 @@
 ## 通讯
 - 使用函数 `SelectDevice` 选择PMAC卡，用得到的PMAC卡号通过 `Open` 函数进行连接。(参考使用手册的38页，以及在LabView中的调用控件，我们可以获取函数的使用方式)，最终通讯程序框图如下：  
 <div align=center><img src="https://github.com/lin-tea/PMAC_LabView/blob/main/images/connectPMAC.png" width="100%" height="75%"></div>  
+
 触发连接，会弹出一以下界面，选择连接方式进行连接，(连接成功后，得到的连接状态为: True):
+
 <div align=center><img src="https://github.com/lin-tea/PMAC_LabView/blob/main/images/connectPMAC2.png" width="30%" height="30%"></div>   
 
 ## PMAC基本实时执行命令  
@@ -54,6 +58,7 @@
   
 其中(n表示电机号，C表示常数)
 ## Jog实现
+- **Jog功能**：电机正向、反向点动、移动到某位置、移动一定步长。
 
 ## 位置读取
 
