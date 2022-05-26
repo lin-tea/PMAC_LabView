@@ -59,7 +59,11 @@
 其中(n表示电机号，C表示常数)
 ## Jog实现
 - **Jog功能**：电机正向、反向点动、移动到某位置、移动一定步长。
+  - **使用控件**：事件结构  
 
+<div align=center><img src="https://github.com/lin-tea/PMAC_LabView/blob/main/images/posDotMove.png"></div>  
+  
+  
 ## 位置读取
 
 ## 文件下载
