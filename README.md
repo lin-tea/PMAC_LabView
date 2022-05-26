@@ -59,15 +59,35 @@
 其中(n表示电机号，C表示常数)
 ## Jog实现
 - **Jog功能**：电机正向、反向点动、移动到某位置、移动一定步长。
-  - **使用控件**：事件结构  
+  - **思路**：使用事件结构，在循环中添加事件处理分支处理按钮按下、松开。
+  - **正向点动示例**：
+<div align=center><img src="https://github.com/lin-tea/PMAC_LabView/blob/main/images/plusDotMove.png" width="35%" height="35%"></div>  
+ 
+  最终实现功能:
 
-<div align=center><img src="https://github.com/lin-tea/PMAC_LabView/blob/main/images/posDotMove.png"></div>  
+  <div align=center><img src="https://github.com/lin-tea/PMAC_LabView/blob/main/images/Jog.png" width="45%" height="45%"></div>   
   
-  
+  单步点动为True,则按下按钮只会移动相应步长。
+  - (注意)：
+    - 循环中，一定要事件触发才会进行下一次执行；
+    - 按钮的机械动作与触发事件相匹配。；
+    - 当有事件结构时，文本框的改变也需要作为事件触发，更新文本框。  
+   
 ## 位置读取
+- 思路同上，使用 `GetResponseEx()` 函数；用一个定时循环，定时采集位置，进行显示。
+
+<div align=center>
+  <img src="https://github.com/lin-tea/PMAC_LabView/blob/main/images/posVI.png" width="25%" height="25%">  <img src="https://github.com/lin-tea/PMAC_LabView/blob/main/images/readPosition.png" width="50%" height="50%">
+</div>   
+
 
 ## 文件下载
+- 使用函数 `Download()` 函数
+
+<div align=center>
+  <img src="https://github.com/lin-tea/PMAC_LabView/blob/main/images/fileDownload.png" width="10%" height="10%">
+</div>  
 
 ---
 ## Reference  
-[1]  
+[1]  [避免在同一个循环中放置两个事件结构](https://zone.ni.com/reference/zhs-XX/help/371361R-0118/lvhowto/twoevntstrctonelp/)  
