@@ -14,5 +14,12 @@
 ## 在Labview中使用例程即可获取光谱的显示图像
   <div align=center><img src="https://github.com/lin-tea/PMAC_LabView/blob/main/images/spectrum/exampleVI.png.jpg" width="45%" height="45%"></div>
 
+## 峰值、波长、半宽
+- 峰值：峰值的获取是通过检索光强数组中的最大值。
+  - 使用控件：`编程` -> `数组` -> `数组最大最小值`  
+  
+- 波长：依据检索到峰值，通过这个峰值检索波长数组中对应的下标。  
+- 半宽：取峰值的一半，即半峰值，检索数组中最接近半峰的那个值，并由此检索其下标。用峰值对应的下标减去该值并取绝对值，再乘2即为半宽。  
+
 
 
