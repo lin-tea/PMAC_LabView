@@ -18,7 +18,7 @@
 - 驱动安装后，连接USB2000+可以在NI MAX或LabView中看到。  
 
 ## 在Labview中使用例程即可获取光谱的显示图像
-  <div align=center><img src="https://github.com/lin-tea/PMAC_LabView/blob/main/images/spectrum/exampleVI.png.jpg" width="45%" height="45%"></div>
+  <div align=center><img src="https://github.com/lin-tea/PMAC_LabView/blob/main/images/spectrum/exampleVI.jpg" width="45%" height="45%"></div>
 
 ## 峰值波长半宽
 - 峰值：峰值的获取是通过检索光强数组中的最大值。
