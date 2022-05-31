@@ -31,7 +31,9 @@
 - 使用固定阈值的小波变化进行滤波，用MATLAB Script控件进行运行matlab脚本，注意要先安装MATLAB。  
 <div align=center>
   <img src="https://github.com/lin-tea/PMAC_LabView/blob/main/images/spectrum/matlab.png" width="45%" height="45%"></div>
-- 也许你会遇到 `0x147` 错误:原因是MATLAB没添加到环境 [解决办法](https://knowledge.ni.com/KnowledgeArticleDetails?id=kA00Z0000019Lk2SAE&l=zh-CN)  
+- 也许你会遇到 `0x147` 错误:原因是MATLAB没添加到环境。  
+
+- [解决办法](https://knowledge.ni.com/KnowledgeArticleDetails?id=kA00Z0000019Lk2SAE&l=zh-CN)    
 
 ## 最终程序框图
 <div align=center>
