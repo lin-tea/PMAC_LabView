@@ -88,6 +88,9 @@
   <img src="https://github.com/lin-tea/PMAC_LabView/blob/main/images/fileDownload.png" width="10%" height="10%">
 </div>  
 
+## 光谱采集
+- [Here](./spectrum_Ocean-optis.md)  
+
 ---
 ## Reference  
 [1]  [避免在同一个循环中放置两个事件结构](https://zone.ni.com/reference/zhs-XX/help/371361R-0118/lvhowto/twoevntstrctonelp/)  
